@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Risk Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1><i class="fas fa-heartbeat"></i> Heart Disease Risk Prediction</h1>
+
+        <div class="info-box">
+            <p><i class="fas fa-info-circle"></i> Please fill in all the fields with your medical information to assess
+                your heart disease risk.</p>
+        </div>
+
+        <div class="form-container">
+            <form id="predictForm">
+                <div class="form-group">
+                    <label for="Age">Age</label>
+                    <input type="number" id="Age" name="Age" placeholder="Enter your age" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Sex">Sex</label>
+                    <select id="Sex" name="Sex" required>
+                        <option value="" disabled selected>Select gender</option>
+                        <option value="1">Male (1)</option>
+                        <option value="0">Female (0)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Cp">Chest Pain Type</label>
+                    <select id="Cp" name="Cp" required>
+                        <option value="" disabled selected>Select type</option>
+                        <option value="0">Typical angina (0)</option>
+                        <option value="1">Atypical angina (1)</option>
+                        <option value="2">Non-anginal pain (2)</option>
+                        <option value="3">Asymptomatic (3)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Trestbps">Resting Blood Pressure (mm Hg)</label>
+                    <input type="number" id="Trestbps" name="Trestbps" placeholder="e.g., 120" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Chol">Cholesterol (mg/dl)</label>
+                    <input type="number" id="Chol" name="Chol" placeholder="e.g., 200" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Fbs">Fasting Blood Sugar > 120 mg/dl</label>
+                    <select id="Fbs" name="Fbs" required>
+                        <option value="0">No (0)</option>
+                        <option value="1">Yes (1)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Restecg">Resting ECG Results</label>
+                    <select id="Restecg" name="Restecg" required>
+                        <option value="0">Normal (0)</option>
+                        <option value="1">ST-T wave abnormality (1)</option>
+                        <option value="2">Probable LVH (2)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Thalach">Max Heart Rate Achieved (Thalach)</label>
+                    <input type="number" id="Thalach" name="Thalach" placeholder="e.g., 150" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Exang">Exercise Induced Angina</label>
+                    <select id="Exang" name="Exang" required>
+                        <option value="0">No (0)</option>
+                        <option value="1">Yes (1)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Oldpeak">ST Depression (Oldpeak)</label>
+                    <input type="number" step="0.1" id="Oldpeak" name="Oldpeak" placeholder="e.g., 1.5" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Slope">Slope of ST Segment</label>
+                    <select id="Slope" name="Slope" required>
+                        <option value="0">Upsloping (0)</option>
+                        <option value="1">Flat (1)</option>
+                        <option value="2">Downsloping (2)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Ca">Number of Major Vessels (0-3)</label>
+                    <input type="number" min="0" max="3" id="Ca" name="Ca" placeholder="0-3" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Thal">Thalassemia</label>
+                    <select id="Thal" name="Thal" required>
+                        <option value="1">Normal (1)</option>
+                        <option value="2">Fixed Defect (2)</option>
+                        <option value="3">Reversible Defect (3)</option>
+                    </select>
+                </div>
+
+                <button type="submit">
+                    <i class="fas fa-calculator"></i> Predict Risk
+                </button>
+            </form>
+        </div>
+
+        <div id="loading" class="loading"></div>
+        <div id="result"></div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
