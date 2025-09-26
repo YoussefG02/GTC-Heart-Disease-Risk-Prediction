@@ -58,6 +58,11 @@ The heart disease risk prediction tool is now live\!
   - **🌐 Live Web App**: [**Access the tool here**](https://youssefg02.github.io/GTC-Heart-Disease-Risk-Prediction/)
   - **🔌 Backend API**: The API is hosted on [**Railway**](https://heart-disease-risk-prediction.up.railway.app/).
 
+## 📊 Presentation & Demo
+
+  - **Presentation Slides**: A detailed presentation summarizing the project's objectives, methodology, and results can be found [**here**](https://www.canva.com/design/DAGz_oao5ys/Q_6N9jGaGkehj-UmcfrFFQ/view?utm_content=DAGz_oao5ys&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h85b1bc9d98).
+  - **Demo Video**: Watch a screen recording of the web application in action [**here**](https://drive.google.com/file/d/1EQlG2Q16CreBSWOHo52IfxZEsOt1SJc7/view).
+
 ## 🛠️ How to Use
 
 1.  **Navigate** to the live web app link provided above.
